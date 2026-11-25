@@ -39,17 +39,17 @@ void	rush(int x, int y)
 	int		row;
 	int		col;
 
-	row = 1;
 	if (x <= 0 || y <= 0)
 	{
 		return ;
 	}
-	while (row <= y)
+	row = 0;
+	while (row < y)
 	{
-		col = 1;
-		while (col <= x)
+		col = 0;
+		while (col < x)
 		{
-			cond(col, row, x, y);
+			cond(col + 1, row + 1, x, y);
 			col++;
 		}
 		ft_putchar('\n');
