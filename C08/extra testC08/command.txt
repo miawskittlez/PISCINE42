@@ -1,0 +1,4 @@
+cc -Wall -Wextra -Werror -I "extra testC08" \
+  "extra testC08/main.c" ex04/ft_strs_to_tab.c ex05/ft_show_tab.c \
+  -o c08_test
+./c08_test hello world
